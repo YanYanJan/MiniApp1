@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/detail_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="40dp"
+                android:text="TextView" />
+
+            <ImageView
+                android:id="@+id/detail_image"
+                android:layout_width="140dp"
+                android:layout_height="230dp"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/detail_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/detail_image"
+                android:textSize="16dp"
+                android:layout_marginStart="10dp"
+
+                android:text="TextView" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/already_seen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/detail_text"
+                    android:onClick="alreadyChecked"
+                    android:textSize="18dp"
+                    android:text="@string/already_seen" />
+
+                <RadioButton
+                    android:id="@+id/want_to_see"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/already_seen"
+                    android:textSize="18dp"
+                    android:onClick="wantChecked"
+                    android:text="@string/want_to_see" />
+
+                <RadioButton
+                    android:id="@+id/do_not_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/want_to_see"
+                    android:textSize="18dp"
+                    android:onClick="noChecked"
+                    android:text="@string/do_not_like" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/do_not_like"
+                android:text="@string/submit"
+                app:srcCompat="?attr/actionModeCloseDrawable"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

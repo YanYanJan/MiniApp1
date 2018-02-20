@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">StarWar Movies</string>
+    <string name="image_description">This is the poster</string>
+    <string name="movie_name">Movie Name.</string>
+    <string name="movie_description">Movie Description.</string>
+    <string name="movie_character">Character Name.</string>
+    <string name="has_seen">No selection.</string>
+    <string name="submit">Submit</string>
+    <string name="already_seen">Already seen</string>
+    <string name="want_to_see">Want to see</string>
+    <string name="do_not_like">Do not like</string>
+</resources>
